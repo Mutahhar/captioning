@@ -275,6 +275,7 @@ class SubstationalphaFile extends File
 		$buffer .= $this->lineEnding;
 		$buffer .= '[Events]' . $this->lineEnding;
 		$buffer .= 'Format: ' . implode( ', ', $this->events ) . $this->lineEnding;
+
 		foreach ( $this->cues as $cue ) {
 			$buffer .= $cue . $this->lineEnding;
 		}
