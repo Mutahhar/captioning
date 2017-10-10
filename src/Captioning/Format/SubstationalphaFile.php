@@ -268,7 +268,7 @@ class SubstationalphaFile extends File
 		$buffer .= 'Format: ' . implode( ', ', array_keys( $styles ) ) . $this->lineEnding;
 
 		foreach ( $this->getMultiStyles() as $style ) {
-			$buffer .= 'Style: ' . implode( ', ', array_values( $style ) ) . $this->lineEnding;
+			$buffer .= 'Style: ' . implode( ',', array_values( $style ) ) . $this->lineEnding;
 		}
 
 		// events (= cues)
